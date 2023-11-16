@@ -4,3 +4,111 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* main */
+
+  /* aside */
+
+  aside{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: calc(100vh - 100px);
+    background-color: black;
+    color: white;
+  }
+
+
+/* header */
+
+  header > .upgrade{
+    color: white;
+    border: 1px solid white;
+    padding: 20px 10x;
+  }
+
+/* footer */
+
+.footer-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: #282828;
+    color: white;
+    font-size: 0.8em;
+}
+
+.left-side{
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+.left-side > div{
+    padding: 0px 5px;
+}
+
+.icon-box > span{
+    padding: 0px 5px;
+}
+
+.footer-img{
+    max-width: 70px;
+    max-height: 70px;
+}
+
+.footer-img > img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.central-side{
+    width: 40%;
+}
+
+.central-side > div{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+.central-side > div > span{
+    padding: 0px 10px;
+}
+
+.right-side > span {
+    padding: 0px 10px;
+}
+
+.central-side >.track-box{
+    display: flex;
+    align-items: center;
+}
+.central-side > .track-box > *{
+    margin: 10px;
+}
+
+.track-box :nth-child(2){
+    width: 80%;
+    background-color: #545454;
+    height: 2px;
+}
+
+.track-line-2{
+    height: 2px;
+    background-color: #545454;
+    width: 20%;
+}
+
+.track-progression{
+    height: 2px;
+    background-color: white;
+    width: 20%;
+}
+
+.right-side{
+    width: 30%;
+    display: flex;
+    flex-direction: row-reverse;
+}
