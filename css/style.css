@@ -1,232 +1,345 @@
 /* RESET */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* generale */
 
-li{
-    list-style: none;
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.body-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* aside */
+
+.hidden-logo {
+  display: none;
+}
+
+aside a{
     text-decoration: none;
+    color: gray;
+}
+
+.aside-top{
+    margin-top: 20px
+}
+
+aside {
+  width: 200px;
+  /* height: calc(100vh - 100px); */
+  background-color: black;
+  color: white;
+  padding: 10px 0px 0px 10px;
+  vertical-align: middle;
+}
+.aside-top > ul > li > span > img {
+  width: 30px;
+}
+
+.aside-top > ul > li > span, #playlist{
+    vertical-align: middle;
+}
+
+.spotify-icon > img {
+  width: 150px;
+}
+
+.aside-bottom > h3{
+    margin: 20px 0px;
+}
+
+.aside-bottom > ul > li{
+    margin-top: 20px;
 }
 
 
-  /* aside */
+#playlist{
+    color: gray;
+}
 
-    
-
-
-  aside{
-    min-width: 200px;
-    /* height: calc(100vh - 100px); */
-    background-color: black;
+#white-item{
     color: white;
-  }
+    border-left: 2px solid green;
+}
 
 
-  /* header */
-  header{
-      background-color: rgb(0, 0, 0, 0.8);
-      width: 100%;
-      min-height: 50px;
-      text-align: right;
-      position: sticky;
-      top: 0;
-  }
-  
-    header > .upgrade{
-      color: white;
-      border: 1px solid white;
-      padding: 10px 20px;
-      display: inline-block;
-      margin: 10px 20px 10px 0px;
-      border-radius: 30px;
-      text-transform: uppercase;
-    }
-  
-    .card-container , .card-container-2, .card-container-3{
-      display: flex;
-      flex-wrap: wrap;
-      margin: 30px 0px;
-    }
-  
-    .card{
-      width: calc((100% / 6) - 20px);
-      text-align: center;
-      color: white;
-      margin: 0px 10px; 
-   }
-    .card > .img-card{
-      width: 100%;
-    }
-  
-    .card > .img-card > p{
-      margin: 5px 0px;
-      color:gray ;
-    }
-    .img-card > img{
-      width: 100%;
-      object-fit: cover;
-    }
-  
-    main > h2{
-      color: white;
-      margin: 20px 10px 0px 10px;
-    }
+/* header */
+
+header {
+  background-color: rgb(0, 0, 0, 0.8);
+  width: 100%;
+  min-height: 50px;
+  text-align: right;
+  position: sticky;
+  top: 0;
+}
+header > .upgrade {
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  display: inline-block;
+  margin: 10px 20px 10px 0px;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+
+/* card */
+
+.card-container,
+.card-container-2,
+.card-container-3 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 0px;
+}
+
+.card {
+  width: calc((100% / 6) - 20px);
+  text-align: center;
+  color: white;
+  margin: 0px 10px;
+}
+
+.card > p {
+    margin: 5px 0px;
+    color: gray;
+}
+.img-card > img {
+    width: 100%;
+    object-fit: cover;
+}
+.card > .img-card {
+  width: 100%;
+  position: relative;
+}
+
+.play-hover{
+    background-color: rgb(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(1.3px) ;
+    display: none;
+}
+
+.card:hover .play-hover{
+    display: block;
+}
+
+.play-hover i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     
-    .special{
-        margin: 10px 10px;
-        color: gray;
-    }
+
+}
+/* fine card */
+
+main > h2 {
+  color: white;
+  margin: 20px 10px 0px 10px;
+}
+
+.special {
+  margin: 10px 10px;
+  color: gray;
+}
 /* main */
 
-.container{
-    display: flex;
-    background-color: #141922;
+.container {
+  display: flex;
+  background-color: #141922;
 }
 
-
-main{
-    width: calc(100% - 200px);
-    height: calc(100vh - 100px);
-    overflow: auto; 
+main {
+  width: calc(100% - 200px);
+  height: calc(100vh - 100px);
+  overflow: auto;
 }
 
-main > nav{
-    color: lightgray;
-    width: 60%;
-    margin: 20px auto;
-}
-    
-main > nav > ul{
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+main > nav {
+  color: lightgray;
+  width: 80%;
+  margin: 20px auto;
 }
 
-main > nav > ul > li{
-    margin: 0px 10px;
+main > nav > ul {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.card-container-3 > .card > .img-card > img{
-    border-radius: 300px;
+main > nav > ul > li {
+  margin: 0px 10px 20px;
+}
+
+main > nav > ul > li > a{
+    text-decoration: none;
+    color: gray;
+}
+
+.card-container-3 > .card > .img-card > img {
+  border-radius: 300px;
+}
+
+#green-border{
+    border-bottom: 2px solid green;
 }
 
 /* fine main */
 
-
 /* footer */
 
-.footer-row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    background-color: #282828;
-    color: white;
-    font-size: 0.8em;
+.track-box :nth-child(2) {
+  width: 100%;
+  min-width: 150px;
+  background-color: #545454;
+  height: 3px;
 }
 
-.left-side{
-    display: flex;
-    align-items: center;
-    width: 30%;
+.track-progression {
+  height: 3px;
+  background-color: white;
+  width: 20%;
+}
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: #282828;
+  color: white;
+  font-size: 0.8em;
 }
 
-.left-side > div{
-    padding: 0px 5px;
+/* sinistra footer */
+
+
+.left-side {
+  display: flex;
+  align-items: center;
+  width: 30%;
 }
 
-.icon-box > span{
-    padding: 0px 5px;
+.left-side > div {
+  padding: 0px 5px;
 }
 
-.footer-img{
-    max-width: 70px;
-    max-height: 70px;
+.icon-box > span {
+  padding: 0px 5px;
 }
 
-.footer-img > img{
-    width: 100%;
-    object-fit: cover;
+.footer-img {
+  max-width: 70px;
+  max-height: 70px;
 }
 
-.central-side{
-    width: 40%;
+.footer-img > img {
+  width: 100%;
+  object-fit: cover;
+}
+/* fine sinistra footer */
+
+/* centro footer */
+
+.central-side {
+  width: 30%;
 }
 
-.central-side :first-child{
-    display: flex;
-    justify-content: center;
+.central-side :first-child {
+  display: flex;
+  justify-content: center;
+}
+.central-side > div {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.central-side > div{
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
+.central-side > div > span {
+  padding: 0px 10px;
+}
+.central-side > .track-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.central-side > div > span{
-    padding: 0px 10px;
+.central-side > .track-box > * {
+  margin: 10px;
 }
+
+/* fine centro footer */
+
+/* destra footer */
 
 .right-side > span {
-    padding: 0px 10px;
+  padding: 0px 10px;
 }
-
-.central-side >.track-box{
-    display: flex;
-    align-items: center;
+.track-line-2 {
+  height: 2px;
+  background-color: #545454;
+  width: 20%;
+  min-width: 30px;
 }
-
-.central-side > .track-box > *{
-    margin: 10px;
-}
-
-.track-box :nth-child(2){
-    width: 80%;
-    background-color: #545454;
-    height: 3px;
-}
-
-.track-progression{
-    height: 3px;
-    background-color: white;
-    width: 20%;
-}
-
-.track-line-2{
-    height: 2px;
-    background-color: #545454;
-    width: 20%;
-}
-
-
-.right-side{
-    width: 30%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.right-side {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .right-side > div {
-    margin: 0px 10px;
+  margin: 0px 10px;
 }
 
+/* fine footer */
 
-@media screen and (max-width:1100px) {
-    .card{
-        width: calc((100% / 4) - 20px) ;
-    }
+@media screen and (max-width: 1100px) {
+  .card {
+    width: calc((100% / 4) - 20px);
+  }
 }
 
-@media  screen and (max-width:700px){
-    .card{
-        width: calc((100% / 2) - 20px);
-    }
+@media screen and (max-width: 700px) {
+  .card {
+    width: calc((100% / 2) - 20px);
+  }
 }
-    
+
+@media screen and (max-width: 600px) {
+  .hidden {
+    display: none;
+  }
+
+  aside > div > .spotify-icon {
+    display: none;
+  }
+
+  aside > div > .hidden-logo {
+    display: block;
+  }
+
+  aside {
+    width: 50px;
+    padding: 10px 10px 0px;
+  }
+
+  main {
+    width: calc(100% - 50px);
+  }
+}
+
 
