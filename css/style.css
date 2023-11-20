@@ -19,85 +19,97 @@ li {
 
 /* hover */
 
-.hover-list > li :hover{
-    color: white;
+.hover-list > li :hover {
+  color: white;
 }
 
-.hover-list > li > span :hover{
-    color: white;
+.hover-list > li > span :hover {
+  color: white;
 }
 
-.upgrade:hover{
-    transform: scale(1.1);
+.upgrade:hover {
+  transform: scale(1.1);
 }
 
-.card:hover .play-hover{
-    display: block;
+.card:hover .play-hover {
+  display: block;
 }
 
-#playlist :hover{
-    color: white;
+#playlist :hover {
+  color: white;
 }
 
+.green-border {
+  position: absolute;
+}
+
+.artist{
+  border-radius: 50%;
+}
 
 /* aside */
 
-.hidden-logo {
-  display: none;
-}
-
-aside a{
-    text-decoration: none;
-    color: gray;
-}
-
-.aside-top{
-    margin-top: 20px
-}
-
 aside {
   width: 200px;
-  /* height: calc(100vh - 100px); */
   background-color: black;
   color: white;
   padding: 10px 0px 0px 10px;
   vertical-align: middle;
-}
-.aside-top > ul > li > span > img {
-  width: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
-.aside-top > ul > li > span, #playlist{
-    vertical-align: middle;
+.aside-top {
+  margin-top: 20px;
+}
+
+.aside-bottom {
+  flex-grow: 1;
+}
+.hidden-logo {
+  display: none;
+}
+
+aside a {
+  text-decoration: none;
+  color: gray;
+}
+
+.aside-top > ul > li > span > img {
+  width: 30px;
+  color: gray;
+}
+
+.aside-top > ul > li > span,
+#playlist {
+  vertical-align: middle;
 }
 
 .spotify-icon > img {
   width: 150px;
 }
 
-.aside-bottom > h3{
-    margin: 20px 0px;
+.aside-bottom > h3 {
+  margin: 20px 0px;
 }
 
-.aside-bottom > ul > li{
-    margin-top: 20px;
+.aside-bottom > ul > li {
+  margin-top: 20px;
 }
 
-.main-list{
-    height: 40%;
-    overflow: auto;
+.main-list {
+  height: 50%;
+  overflow: auto;
 }
 
-
-#playlist{
-    color: gray;
+#playlist {
+  color: gray;
 }
 
-#white-item{
-    color: white;
-    border-left: 2px solid green;
+#white-item {
+  color: gray;
+  border-left: 2px solid green;
 }
-
 
 /* header */
 
@@ -109,6 +121,7 @@ header {
   position: sticky;
   top: 0;
 }
+
 header > .upgrade {
   color: white;
   border: 1px solid white;
@@ -118,8 +131,6 @@ header > .upgrade {
   border-radius: 30px;
   text-transform: uppercase;
 }
-
-
 
 /* card */
 
@@ -139,38 +150,35 @@ header > .upgrade {
 }
 
 .card > p {
-    margin: 5px 0px;
-    color: gray;
+  margin: 5px 0px;
+  color: gray;
 }
 .img-card > img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 .card > .img-card {
   width: 100%;
   position: relative;
 }
 
-.play-hover{
-    background-color: rgb(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    backdrop-filter: blur(1.3px) ;
-    display: none;
+.play-hover {
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(1.3px);
+  display: none;
 }
 
-
-.play-hover i{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.play-hover i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-    
-
 
 /* fine card */
 
@@ -197,7 +205,6 @@ main {
   overflow: auto;
 }
 
-
 main > nav {
   color: lightgray;
   width: 80%;
@@ -215,17 +222,17 @@ main > nav > ul > li {
   margin: 0px 10px 20px;
 }
 
-main > nav > ul > li > a{
-    text-decoration: none;
-    color: gray;
+main > nav > ul > li > a {
+  text-decoration: none;
+  color: gray;
 }
 
 .card-container-3 > .card > .img-card > img {
   border-radius: 300px;
 }
 
-#green-border{
-    border-bottom: 2px solid green;
+#green-border {
+  border-bottom: 2px solid green;
 }
 
 /* fine main */
@@ -256,7 +263,6 @@ main > nav > ul > li > a{
 
 /* sinistra footer */
 
-
 .left-side {
   display: flex;
   align-items: center;
@@ -285,7 +291,7 @@ main > nav > ul > li > a{
 /* centro footer */
 
 .central-side {
-  width: 30%;
+  width: 40%;
 }
 
 .central-side :first-child {
@@ -293,7 +299,6 @@ main > nav > ul > li > a{
   justify-content: center;
 }
 .central-side > div {
-  width: 50%;
   margin: 0 auto;
   text-align: center;
 }
@@ -371,5 +376,3 @@ main > nav > ul > li > a{
     width: calc(100% - 50px);
   }
 }
-
-
